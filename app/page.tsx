@@ -1,9 +1,10 @@
-export default function MainPage() {
+import Hero from "../app/components/Hero";
+
+export default function Page() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold">
-        Day One! 👋
-      </h1>
+    <main>
+      <Hero />
+      {/* Later you can add <About />, <Projects />, <Contact /> */}
     </main>
   );
 }
