@@ -1,36 +1,50 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="w-full min-h-screen flex justify-center items-center bg-gray-100">
+    // Main Section
+    <section className="w-full min-h-screen flex justify-center items-start">
+
       {/* Outer rectangle container */}
-      <div className="w-full max-w-10xl p-10 rounded-lg shadow-lg flex flex-col gap-8 bg-[#f5f5dc]">
-        {/* About Me text */}
+      <div className="w-full max-w-7xl p-10 rounded-lg shadow-lg flex flex-col gap-8 bg-[#f5f5dc] relative min-h-[500px] overflow-hidden">
+
+        {/* Name on header */}
         <div>
-          <h1 className="text-3xl font-bold mb-4">Adrian James Ordonio</h1>
+            <h1 className="text-3xl font-bold mb-4">
+                Adrian James Ordonio
+            </h1>
+        </div>
+
+        {/* Tech Stack */}
+        <div>
           <p className="text-lg">
-            I'm a Data Science & Frontend Developer passionate about creating clean and
-            functional designs.
+            Full Stack | AI | Data Science
           </p>
         </div>
 
-        {/* Inner containers: Design and Picture */}
-        <div className="flex flex-col md:flex-row gap-6">
-          {/* Design Image */}
-          <div className="flex-1 rounded-md overflow-hidden">
-            <img
-              src="/my-design.png" // replace with your design image
-              alt="My Design Work"
-              className="w-full h-auto rounded-md shadow-lg"
+        {/* BGDesign and ProfilePic container */}
+        <div className="flex flex-col md:flex-row gap-6">   
+
+          {/* BGDesign */}
+          <div className="absolute top-0 right-0">
+            <Image
+                src="/BGDesign-L.png"
+                alt="Adrian Ordonio"
+                width={420}
+                height={100} // shorter than original
+                className="rounded-md shadow-md"
             />
           </div>
 
-          {/* Portrait Image */}
-          <div className="w-full md:w-1/3 rounded-md overflow-hidden">
-            <img
-              src="public/ProfilePicture.png" // replace with your portrait
-              alt="Adrian Ordonio"
-              className="w-full h-auto rounded-md shadow-md"
+          {/* ProfilePic */}
+          <div className="absolute top-20 right-75">
+            <Image
+                src="/InformalPic.JPG"
+                alt="Adrian Ordonio"
+                width={300}  // set width in pixels
+                height={400} // set height in pixels
+                className="rounded-md shadow-md"
             />
           </div>
         </div>
