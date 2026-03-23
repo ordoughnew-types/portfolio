@@ -28,8 +28,8 @@ export default function Hero() {
           {/* Portrait Image */}
           <div className="w-full md:w-1/3 rounded-md overflow-hidden">
             <img
-              src="/my-picture.jpg" // replace with your portrait
-              alt="My Portrait"
+              src="public/ProfilePicture.png" // replace with your portrait
+              alt="Adrian Ordonio"
               className="w-full h-auto rounded-md shadow-md"
             />
           </div>
