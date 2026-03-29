@@ -26,7 +26,7 @@ export default function Hero() {
         {/* BGDesign */}
         <div className="absolute top-0 right-0 w-[500px] h-[950px] flex flex-col md:flex-row gap-6">
           <Image
-              src="/BGDesign-L.png"
+              src="/pics/BGDesign-L.png"
               alt="Just a Design"
               fill
               className="object-cover rounded-md shadow-md"
@@ -36,7 +36,7 @@ export default function Hero() {
         {/* ProfilePic */}
         <div className="absolute top-40 right-40 w-[440px] h-[590px] flex flex-col md:flex-row gap-6">
           <Image
-              src="/InformalPic.JPG"
+              src="/pics/InformalPic.JPG"
               alt="Adrian Ordonio"
               fill
               className="rounded-md shadow-md"
